@@ -20,41 +20,41 @@
 		</header>
 		<section>
 			<h2>S'inscrire à notre Web Shop</h2>
-			<!-- début du formulaire "SingUp" method="post" action="#" -->
+			<form name="SingUp" id="SingUp" method="post" action="#">
 				<p>Les champs obligatoires sont suivis d'un <strong><abbr title="obligatoire">*</abbr></strong></p>
-				<!-- début d'ensemble de champs "Coordonnées" -->
-					<!-- la légende de l'ensemble de champs --><span>1</span>Coordonnées<!-- fin de la légende -->
+				<fieldset>
+					<legend><span>1</span>Coordonnées</legend>
 					<div class="all-entries">
 						<div class="one-entry">
 							<span class="superlabel" title="Choisissez ici votre genre">
 								Civilité <strong><abbr title="obligatoire">*</abbr></strong>
-									<!-- début du label dans la classe "thin" avec attribut for qui englobe l'input et le texte --><!-- un input de type bouton radio "gender" dont la valeur est "Mme" et qui est coché par défaut -->Madame<!-- fin du label-->
-									<!-- début du label dans la classe "thin" avec attribut for qui englobe l'input et le texte --><!-- un input de type bouton radio "gender" dont la valeur est "Mr" et qui n'est pas coché par défaut -->Monsieur<!-- fin du label-->
+									<label class="thin" for="Mme"><input type="radio" id="Mme" name="gender" value="Mme" checked />Madame</label>
+									<label class="thin" for="Mr"><input type="radio" id="Mr" name="gender" value="Mr" />Monsieur</label>
 							</span>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Choisissez ici votre genre
 							</div>
 						</div>
 						<div class="one-entry">
-							<!-- début du label avec attribut for qui englobe le champ et le texte -->Nom &amp; prénom <strong><abbr title="obligatoire">*</abbr></strong><!-- un champ de texte uniligne "nomPr" requis et dont le titre affiche au survol le texte repris juste après la balise i ci-dessous et avec un placeholder "Doe John" --><!-- fin du label -->
+							<label for="nomPr">Nom &amp; prénom <strong><abbr title="obligatoire">*</abbr></strong><input type="text" name="nomPr" id="nomPr" title="Saisissez ici vos noms et prénoms sous la forme &laquo;&nbsp;Nom Prenom&nbsp;&raquo;" placeholder="Doe John" required/></label>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Saisissez ici vos noms et prénoms sous la forme &laquo;&nbsp;Nom Prenom&nbsp;&raquo;
 							</div>
 						</div>
 						<div class="one-entry">
-							<!-- début du label avec attribut for qui englobe le champ et le texte -->Adresse <strong><abbr title="obligatoire">*</abbr></strong><!-- une zone de texte multilignes "adr" requise et dont le titre affiche au survol le texte repris juste après la balise i ci-dessous et avec un placeholder "Rue du Lac, 20                                 1000 Bruxelles" --><!-- fin du label -->
+							<label for="adr">Adresse <strong><abbr title="obligatoire">*</abbr></strong><textarea name="adr" id="adr" title="Saisissez ici votre adresse" placeholder="Rue du Lac, 20                                 1000 Bruxelles" required></textarea></label>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Saisissez ici votre adresse
 							</div>
 						</div>
 						<div class="one-entry">
-							<!-- début du label avec attribut for qui englobe le champ et le texte -->Pays <strong><abbr title="obligatoire">*</abbr></strong>
-								<!-- début d'une boîte de sélection simple "pays" qui n'affiche qu'une seule option à la fois, requise, et dont le titre affiche au survol le texte repris juste après la balise i ci-dessous -->
-									<!-- début d'une option sélectionnée par défaut dont la valeur est "BE" -->Belgique<!-- fin de l'option>
-									<!-- début d'une option non sélectionnée par défaut dont la valeur est "FR" -->France<!-- fin de l'option>
-									<!-- début d'une option non sélectionnée par défaut dont la valeur est "LU" -->Luxembourg<!-- fin de l'option>
-								<!-- fin de la boîte de sélection -->
-							<!-- fin du label -->
+							<label for="pays">Pays <strong><abbr title="obligatoire">*</abbr></strong>
+								<select name="pays" id="pays" size="1" title="Sélectionnez ici votre pays" required>
+									<option value="BE" selected="selected">Belgique</option>
+									<option value="FR">France</option>
+									<option value="LU">Luxembourg</option>
+								</select>
+							</label>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Sélectionnez ici votre pays
 							</div>
@@ -65,13 +65,13 @@
 					<legend><span>2</span>E-mail &amp; Téléphones</legend>
 					<div class="all-entries">
 						<div class="one-entry">
-							<!-- début du label avec attribut for qui englobe le champ et le texte -->Adresse E-mail <strong><abbr title="obligatoire">*</abbr></strong><!-- un champ e-mail "email" requis et dont le titre affiche au survol le texte repris juste après la balise i ci-dessous et avec un placeholder "john@doe.me" --><!-- fin du label -->
+							<label for="email">Adresse E-mail <strong><abbr title="obligatoire">*</abbr></strong><input type="email" name="email" id="email" title="Saisissez ici votre adresse E-mail" placeholder="john@doe.me" required /></label>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Saisissez ici votre adresse E-mail
 							</div>
 						</div>
 						<div class="one-entry">
-							<!-- début du label avec attribut for qui englobe le champ et le texte -->Téléphone fixe <strong><abbr title="obligatoire">*</abbr></strong><!-- un champ téléphonique  "phone" requis et dont le titre affiche au survol le texte repris juste après la balise i ci-dessous et avec un placeholder "+3221/22.23.24" --><!-- fin du label -->
+							<label for="phone">Téléphone fixe <strong><abbr title="obligatoire">*</abbr></strong><input type="tel" name="phone" id="phone" title="Saisissez ici votre numéro de téléphone fixe (obligation légale pour les payements) sous la forme&nbsp;: +32XX/XX.XX.XX (BE) ou +33X/XX.XX.XX.XX (FR) ou 00352/XX.XX.XX (LU)" placeholder="+3221/22.23.24" required /></label>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Saisissez ici votre numéro de téléphone fixe <sup>(obligation légale pour les payements)</sup> sous la forme&nbsp;:
 								<ul>
@@ -82,7 +82,7 @@
 							</div>
 						</div>
 						<div class="one-entry">
-							<!-- début du label avec attribut for qui englobe le champ et le texte -->GSM <!-- un champ téléphonique "gsm" requis et dont le titre affiche au survol le texte repris juste après la balise i ci-dessous et avec un placeholder "0495/212223" --><!-- fin du label -->
+							<label for="gsm">GSM <input type="tel" name="gsm" id="gsm" title="Saisissez ici votre numéro de GSM" placeholder="0495/212223"/></label>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Saisissez ici votre numéro de GSM
 							</div>
@@ -93,25 +93,25 @@
 					<legend><span>3</span>Profil &amp; paramètres de connexion</legend>
 					<div class="all-entries">
 						<div class="one-entry">
-							<!-- début du label avec attribut for qui englobe le champ et le texte -->Pseudo <!-- un champ de texte uniligne "nick" non requis et dont le titre affiche au survol le texte repris juste après la balise i ci-dessous et avec un placeholder "johny_doey" --><!-- fin du label -->
+							<label for="nick">Pseudo <input type="text" name="nick" id="nick" title="Saisissez ici le pseudonyme à utiliser pour vous connecter (ou laisser vide pour utiliser votre adresse e-mail comme pseudo)" placeholder="johny_doey" /></label>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Saisissez ici le pseudonyme à utiliser pour vous connecter (ou laisser vide pour utiliser votre adresse e-mail comme pseudo)
 							</div>
 						</div>
 						<div class="one-entry">
-							<!-- début du label avec attribut for qui englobe le champ et le texte -->Mot de passe <strong><abbr title="obligatoire">*</abbr></strong> <!-- un champ de mot de passe "mdp" requis et dont le titre affiche au survol le texte repris juste après la balise i ci-dessous et avec un placeholder "jAbcdefg8" --><!-- fin du label -->
+							<label for="mdp">Mot de passe <strong><abbr title="obligatoire">*</abbr></strong><input type="password" name="mdp" id="mdp" title="Saisissez ici le mot de passe à utiliser pour vous connecter (au moins 8 caractères dont au moins une lettre majuscule et un caractère qui n'est pas une lettre)" placeholder="Abcdefg8" required /></label>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Saisissez ici le mot de passe à utiliser pour vous connecter (au moins 8 caractères dont au moins une lettre majuscule et un caractère qui n'est pas une lettre)
 							</div>
 						</div>
 						<div class="one-entry">
-							<!-- début du label avec attribut for qui englobe le champ et le texte -->Confirmation <strong><abbr title="obligatoire">*</abbr></strong> <!-- un champ de mot de passe "conf" requis et dont le titre affiche au survol le texte repris juste après la balise i ci-dessous et avec un placeholder "jAbcdefg8" --><!-- fin du label -->
+							<label for="conf">Confirmation <strong><abbr title="obligatoire">*</abbr></strong><input  type="password" name="conf" id="conf" title="Saisissez ici à nouveau votre mot de passe, pour confirmation" placeholder="Abcdefg8" required /></label>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Saisissez ici à nouveau votre mot de passe, pour confirmation
 							</div>
 						</div>
 						<div class="one-entry">
-							<!-- début du label avec attribut for qui englobe le champ et le texte -->Date de naissance<!-- un champ de date "birthD" non requis et dont le titre affiche au survol le texte repris juste après la balise i ci-dessous --><!-- fin du label -->
+							<label for="birthD">Date de naissance<input type="date" name="birthD" id="birthD" title="Saisissez ici votre date de naissance" /></label>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Saisissez ici votre date de naissance
 							</div>
@@ -119,8 +119,8 @@
 						<div class="one-entry">
 							<span class="superlabel" title="Choisissez ici vos préférences">
 								Préférences
-									<!-- début du label dans la classe "thin" avec attribut for qui englobe l'input et le texte --><!-- un input de type case à cocher "promo" dont la valeur est "1" et qui est coché par défaut -->Je souhaite recevoir les nouvelles promotions<!-- fin du label-->
-									<!-- début du label dans la classe "thin" avec attribut for qui englobe l'input et le texte --><!-- un input de type case à cocher "NL" dont la valeur est "1" et qui n'est pas coché par défaut -->Je souhaite recevoir la newsletter du magasin<!-- fin du label-->
+									<label class="thin" for="promo"><input type="checkbox" id="promo" name="promo" value="1" checked />Je souhaite recevoir les nouvelles promotions</label>
+									<label class="thin" for="NL"><input type="checkbox" id="NL" name="NL" value="1" />Je souhaite recevoir la newsletter du magasin</label>
 							</span>
 							<div class="msg info"> <!-- info affichée au survol du label -->
 								<i class="fa fa-info-circle"></i>Choisissez ici vos préférences
@@ -129,10 +129,10 @@
 					</div>
 				</fieldset>
 				<div class="button-section">
-					<!-- début du bouton de type "soumission des données du formulaire" -->Je m'inscris&nbsp;!<!-- fin du bouton -->
-					<!-- début du bouton de type "remise à zéro des données du formulaire" -->J'efface tout&nbsp;!<!-- fin du bouton -->
+					<button type="submit">Je m'inscris&nbsp;!</button>
+					<button type="reset">J'efface tout&nbsp;!</button>
 				</div>
-			<!-- fin du formulaire "SingUp" -->
+			</form>
 		</section>
 	</body>
 </html>
