@@ -97,4 +97,4 @@ Pour bien utiliser ces balises et ces différents attributs, assurez-vous de bie
 
 * * *
 
-Bon travail !
+Bon travail&nbsp;!
