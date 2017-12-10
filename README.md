@@ -44,7 +44,7 @@ qui doit devenir la balise attendue.
 
 NB&nbsp;:
 - dans ces exemples, `SingUp` et `nomPr` sont les noms des éléménts&nbsp;;
-- les balises de commentaires (fournies) ``html <!-- info affichée au survol du label --> `` sont des *vrais* commentaires et ne doivent pas être remplaçées (elles doivent être laissées telles quelles).
+- les balises de commentaires (fournies) ```html <!-- info affichée au survol du label --> `` sont des *vrais* commentaires et ne doivent pas être remplaçées (elles doivent être laissées telles quelles).
  
 Voci le rendu à obtenir ainsi que la liste précise des balises et attributs à utiliser (obligatoirement).
 
