@@ -18,7 +18,11 @@
 
 Vous trouverez dans ce dossier un fichier texte HTML nommé **index.html**. Cette page contiendra un formulaire prévu pour s'inscrire à un magasin virtuel (un "web shop").
 
-Votre but est d'ajouter à cette structure le formulaire, les ensembles de champs et (surtout) les champs de formulairesqui dont donnés sous formes de balises de commentaires. Par exemple &nbsp;:
+Votre but est d'ajouter à cette structure&nbsp;:
+
+- le formulaire,
+- les ensembles de champs
+- et (surtout) les champs de formulaires qui sont donnés sous formes de balises de commentaires. Par exemple &nbsp;:
 
 ```html
 			<!-- début du formulaire "SingUp" method="post" action="#" -->
