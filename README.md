@@ -93,7 +93,7 @@ Voci le rendu à obtenir ainsi que la liste précise des balises et attributs à
 - `size`
 - `selected`
 
-Pour bien utiliser ces balises et ces différents attributs, assurez-vous de bien comprendre leur sémantiques et leur utilisations.
+Pour bien utiliser ces balises et ces différents attributs, assurez-vous de bien comprendre leurs sémantiques et leurs utilisations.
 
 * * *
 
