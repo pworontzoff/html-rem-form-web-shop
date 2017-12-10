@@ -16,7 +16,6 @@
 
 ## Formulaire d'inscription Web Shop
 
-<<<<<<< HEAD
 Vous trouverez dans ce dossier un fichier texte HTML nommé **index.html**. Cette page contiendra un formulaire prévu pour s'inscrire à un magasin virtuel (un "web shop").
 
 Votre but est d'ajouter à cette structure&nbsp;:
